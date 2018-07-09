@@ -9,11 +9,11 @@ module.exports = {
 	module: {
 		loaders:[
 			{
-				loader: 'babel-loader'
+				loader: 'babel-loader',
 				query:{
-					presets:['es2017']
+					presets:['es2015']
 				},
-				test: ?|.js$/,
+				test: /\.js$/,
 				exclude: /node_modules/
 			
 			}

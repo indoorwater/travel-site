@@ -1,11 +1,20 @@
 var $ = require('jquery');
-var person = require('./modules/Person');
+import person from './modules/Person';
 
-alert("lmao yeet")
+
+class Adult extends person {
+	payTaxes() {
+		console.log(this.name + " now owes $0 in taxes.")
+	}
+	
+}
+
+
 
 var john = new person("John Doe", "blue");
 john.greet();
 
-var jane = new person("Jane Smith", "green");
+var jane = new Adult("Jane Smith", "red");
 jane.greet();
 
+jane.payTaxes();
