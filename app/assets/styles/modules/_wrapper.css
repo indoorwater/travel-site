@@ -12,6 +12,10 @@
 		
 	}
 	
+	&--narrow{
+		max-width: 470px;
+		
+	}
 	
 	
 	&--b-margin{
